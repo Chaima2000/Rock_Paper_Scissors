@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --primary: #b8a4c9;
+    --primary-dark: #f5ccd4;
+    --primary-light: #c9def4;
+    --primary-text: #ffffff;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  html {
+    background-color: var(--primary-text);
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1 {
+    font-size: 34px;
+    margin: 0;
+    background-color: var(--primary-light);
+    color: var(--primary-text);
+    padding: 8px;
   }
-}
+.p{
+    color: var(--primary-text);
+    font-weight:500;
+    font-size: 18px;
+  }
+  .p1{
+    color: #da70d6;
+    font-weight:500;
+    font-size: 18px;
+  }
+  .reset{
+    padding: 5px;
+    margin-top: 15px;
+    border: 1px dotted purple;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .para {
+    background: linear-gradient(to right, #fbb8b8 40%, #abb2ff 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: bold;
+  }
+  .reset:hover{
+    background-color: var(--primary);
+    color: white
+  }
+  h3, h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #da70d6;
+  }
+  .center {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    width: 30%;
+    margin-left: 35%;
+  }
+  
+  .player {
+    margin: 10px;
+    width: 180px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-text);
+    color: var(--primary-text);
+  }
+  
+  .score {
+    padding: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--primary-dark);
+  }
+  .name{
+    background-color: var(--primary);
+    font-weight: 700;
+    padding: 5px;
+    margin-top: 35px;
+  }
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--primary);
+    margin-top: 15px;
+  }
+  
+  .round-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+  }
+  
+  .round-btn:hover {
+    background-color: var(--primary-light);
+  }
